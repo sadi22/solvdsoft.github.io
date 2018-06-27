@@ -138,8 +138,6 @@
 
 .text-block-2 {
   display: block;
-  max-height: 35px;
-  max-width: 99px;
   margin-left: 11.46%;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -151,7 +149,7 @@
   align-items: flex-start;
   font-family: 'Type dynamic sailec', sans-serif;
   color: #fff;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 44px;
   font-weight: 700;
 }
@@ -368,6 +366,7 @@ input.w-button {
     float: none;
   }
   .text-block-2 {
+    margin-top: 5%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -386,7 +385,6 @@ input.w-button {
     text-align: left;
   }
   .form-4 {
-    margin-top: 10%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -403,7 +401,7 @@ input.w-button {
   }
   .form-block-3 {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 10%;
     margin-bottom: 0px;
   }
   .error-message {
@@ -501,7 +499,7 @@ input.w-button {
     line-height: 38px;
   }
   .text-block-4 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
   }
   .email-box {
@@ -523,7 +521,7 @@ input.w-button {
     float: none;
   }
   .div-block {
-    margin-top: 10%;
+    margin-top: 30%;
   }
   .div-block-2 {
     margin-right: auto;
