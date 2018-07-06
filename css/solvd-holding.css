@@ -253,6 +253,32 @@
   line-height: 19px;
 }
 
+.email-box-2 {
+  display: block;
+  width: 265px;
+  height: 40px;
+  border: 1px solid #c1c7cd;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .25);
+  font-family: 'Type dynamic sailec', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  float: left;
+}
+
+.email-box-3 {
+  display: block;
+  width: 265px;
+  height: 40px;
+  border: 1px solid #c1c7cd;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .25);
+  font-family: 'Type dynamic sailec', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  float: right;
+}
+
 .form-4 {
   display: block;
   max-height: 60px;
@@ -384,6 +410,24 @@ input.w-button {
     float: none;
     text-align: left;
   }
+  .email-box-2 {
+    width: 540px;
+    position: static;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    text-align: left;
+  }
+  .email-box-3 {
+    width: 540px;
+    position: static;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    text-align: left;
+  }
   .form-4 {
     margin-right: auto;
     margin-left: auto;
@@ -446,6 +490,12 @@ input.w-button {
   .email-box {
     max-width: 100%;
   }
+  .email-box-2 {
+    max-width: 100%;
+  }
+  .email-box-3 {
+    max-width: 100%;
+  }
   .form-4 {
     max-width: 540px;
   }
@@ -503,6 +553,20 @@ input.w-button {
     line-height: 18px;
   }
   .email-box {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 300;
+    text-align: center;
+  }
+  .email-box-2 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 300;
+    text-align: center;
+  }
+  .email-box-3 {
     width: 100%;
     margin-right: auto;
     margin-left: auto;

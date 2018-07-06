@@ -34,20 +34,17 @@
                     <div class="text-block-4">
                         <div id="drop-email" class="text-block-4">Stay in the loop. We never send spam. 📬</div>
                     </div>
-
-
                     <form id="email-form" name="email-form" data-name="Email Form" class="form-4">
+                        <div class="div-block-3 w-clearfix">
+                          <input id="fname-input" type="text-field" class="w-input email-box-2" maxlength="256" name="FNAME" data-name="firstname" placeholder="first name">
+                          <input id="lname-input" type="text-field" class="w-input email-box-3" maxlength="256" name="LNAME" data-name="lastname" placeholder="last name">
+                        </div>
+
                         <div class="div-block-3 w-clearfix">
                             <input id="email-input" type="email" class="email-box w-input" maxlength="256" name="EMAIL" data-name="Email" placeholder="email@example.com" id="email" required="">
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_52251021093ed092c4da00ca7_475452dd21" tabindex="-1" value=""></div>
                             <input type="submit" value="Notify Me" data-wait="Please wait..." data-w-id="1d71aa82-7fe9-78f6-4773-170667723b2d" class="submit-button-4 w-button"></div>
                     </form>
-
-                    <div id="form-success" style="opacity:0" class="text-block-4">
-                        <div class="text-block-5"></div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -69,29 +66,28 @@
                         console.log("request failed")
                     },
                     success: function(data) {
-                        console.log("request succeeded")
-
+                        console.log("request succeeded")                        
                         if (data.result == "success") {
                             console.log("subscribed")
-                            $("#form-success").text("Hang tight, we've got something great for you.")
-                            $("#form-success").css({
-                                opacity: 1
-                            })
+                            $("#drop-email").text("Hang tight, we've got something great for you.")
                             $('#email-input').val("");
+                            $('#fname-input').val("");
+                            $('#lname-input').val("");
                         } else {
                             console.log("failed to subscribe")
                             msg = data.msg
                             if (msg.includes("already subscribed") == true) {
                                 console.log("already subscribed")
-                                $("#form-success").text("Looks like you're already subscribed.")
+                                $("#drop-email").text("Looks like you're already subscribed.")
                             } else if (msg.includes("recent signup requests")) {
-                                $("#form-success").text("Too many recent requests, please try again later.")
+                                $("#drop-email").text("Too many recent requests, please try again later.")
                             } else {
-                                $("#form-success").text("Something went wrong, please email us at hello@solvdapp.io")
+                                $("#drop-email").text("Something went wrong, please email us hello@solvdapp.io")
                             }
                             $("#form-success").css({
                                 opacity: 1
                             })
+                            console.log(msg)
                         }
                     }
                 })
