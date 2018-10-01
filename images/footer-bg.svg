@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2290px" height="655px" viewBox="0 0 2290 655" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="2290" height="500"></rect>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Final-Copy" transform="translate(-250.000000, -5060.000000)">
+            <g id="footer" transform="translate(250.000000, 5060.000000)">
+                <g id="Group-17" transform="translate(0.000000, 155.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#E6EBF0" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2-Copy-2" stroke="#FFFFFF" stroke-width="4" mask="url(#mask-2)" x="1307" y="100" width="709" height="612" rx="40"></rect>
+                    <rect id="Rectangle-2-Copy-2" stroke="#FFFFFF" stroke-width="4" mask="url(#mask-2)" x="835" y="406" width="1421" height="612" rx="40"></rect>
+                    <rect id="Rectangle-2-Copy-8" stroke="#FFFFFF" stroke-width="4" mask="url(#mask-2)" x="260" y="-421" width="488" height="612" rx="40"></rect>
+                </g>
+                <circle id="Oval-3-Copy-3" fill="#E6EBF0" cx="550" cy="7" r="7"></circle>
+                <path d="" id="Path-6" stroke="#979797"></path>
+                <path d="M748,155 L748,48 C748,25.90861 730.09139,8 708,8 L548,8" id="Path-7" stroke="#E6EBF0" stroke-width="4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

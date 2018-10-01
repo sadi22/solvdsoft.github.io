@@ -1,99 +1,182 @@
-<!DOCTYPE html>
-<html data-wf-page="5b2424870e0be9a107c1335c" data-wf-site="5b2424870e0be96362c1335b">
-
-<head>
-    <meta charset="utf-8">
-    <title>Solvd</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="css/solvd-holding.css" rel="stylesheet" type="text/css">
-    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-    <script type="text/javascript">
-        ! function(o, c) {
-            var n = c.documentElement,
-                t = " w-mod-";
-            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
-        }(window, document);
-    </script>
-    <link href="images/solvd-app-icon.png?v=2" rel="shortcut icon" type="image/x-icon">
-    <link href="images/solvd-app-icon.png?v=2" rel="apple-touch-icon">
-</head>
-
-<body class="body">
-    <div class="wrapper">
-        <div class="text-block-2">Solvd</div>
-        <div class="div-block">
-            <div class="text-block-3">
-                <h1>Busy solving pest management.</h1> <br>
-                <h2> We'll be back soon...</h2>
-            </div>
-            <div class="div-block-2">
-                <div class="form-block-3 w-form">
-                    <div class="text-block-4">
-                        <div id="drop-email" class="text-block-4">Stay in the loop. We never send spam. 📬</div>
-                    </div>
-                    <form id="email-form" name="email-form" data-name="Email Form" class="form-4">
-                        <div class="div-block-3 w-clearfix">
-                          <input id="fname-input" type="text-field" class="w-input email-box-2" maxlength="256" name="FNAME" data-name="firstname" placeholder="first name">
-                          <input id="lname-input" type="text-field" class="w-input email-box-3" maxlength="256" name="LNAME" data-name="lastname" placeholder="last name">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Solvd – pest management software</title>
+        <meta name="description" content="Solvd is remarkable pest management software that will solve your customers’ problems, delight your techs, and transform your business.">
+        <meta name="author" content="Solvd">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <link rel="stylesheet" href="./css/styles.css?v=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <div class="container">
+                    <nav class="level is-mobile">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <a href="/">
+                                    <img class="logo" src="./images/solvd-logo.svg" alt="Solvd">
+                                </a>
+                            </div>
                         </div>
-
-                        <div class="div-block-3 w-clearfix">
-                            <input id="email-input" type="email" class="email-box w-input" maxlength="256" name="EMAIL" data-name="Email" placeholder="email@example.com" id="email" required="">
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_52251021093ed092c4da00ca7_475452dd21" tabindex="-1" value=""></div>
-                            <input type="submit" value="Notify Me" data-wait="Please wait..." data-w-id="1d71aa82-7fe9-78f6-4773-170667723b2d" class="submit-button-4 w-button"></div>
-                    </form>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <a class="button" href="#request">Request a demo</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/webflow.js" type="text/javascript"></script>
-    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#email-form").on("submit", function() {
-                console.log('submitted')
-                $.ajax({
-                    type: "GET",
-                    dataType: 'json',
-                    contentType: "application/json; charset=utf-8",
-                    url: "https://solvdapp.us18.list-manage.com/subscribe/post-json?u=52251021093ed092c4da00ca7&amp;id=475452dd21&c=?",
-                    data: $(this).serialize(),
-                    error: function() {
-                        console.log("request failed")
-                    },
-                    success: function(data) {
-                        console.log("request succeeded")                        
-                        if (data.result == "success") {
-                            console.log("subscribed")
-                            $("#drop-email").text("Hang tight, we've got something great for you.")
-                            $('#email-input').val("");
-                            $('#fname-input').val("");
-                            $('#lname-input').val("");
-                        } else {
-                            console.log("failed to subscribe")
-                            msg = data.msg
-                            if (msg.includes("already subscribed") == true) {
-                                console.log("already subscribed")
-                                $("#drop-email").text("Looks like you're already subscribed.")
-                            } else if (msg.includes("recent signup requests")) {
-                                $("#drop-email").text("Too many recent requests, please try again later.")
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">Turn working into solving</h1>
+                        <p>Solvd is remarkable pest management software that solves customers’ problems, delights techs, and transforms businesses.</p>
+                        <div class="hero-cta">
+                            <a class="button" href="#request">Request a demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-intro">
+                <div class="container">
+                    <p>Solvd can be the catalyst that ignites your revenue growth while building your profits, cash flow, and brand</p>
+                    <p class="section-intro-question">How?</p>
+                </div>
+            </section>
+            <section class="section section-value-prop-1">
+                <div class="container">
+                    <img src="images/value-prop-1.png" width="854" height="985" />
+                    <h2>Seamless user experiences</h2>
+                    <p>We burned the midnight oil to figure-out our user interface, so your employees won’t have to. Solvd offers a frictionless experience that lifts key information to the top, so your staff can focus on solving problems and interacting with customers.</p>
+                </div>
+            </section>
+            <section class="section section-value-prop-2">
+                <div class="container">
+                    <img src="images/value-prop-2.png" width="948" height="1000" />
+                    <h2>Revolutionary task engine</h2>
+                    <p>Service orders shouldn’t be stagnant, instructional blurbs.</p>
+                    <p>In Solvd, service orders are intelligent workspaces that can adjust their components in the moment to suit changing pest problems and technicians’ varying skill-levels ... so even novice techs seem like experts in customers’ eyes.</p>
+                    <p>Solvd’s context-rich tasks arm your techs with the information they need to deliver efficient service, ensure optimal outcomes, and capitalize on every opportunity to delight your customers and upsell valuable services.</p>
+                </div>
+            </section>
+            <section class="section section-value-prop-3">
+                <div class="container">
+                    <img src="images/value-prop-3.png" width="805" height="967" />
+                    <h2>Scheduling wizardry</h2>
+                    <p>Some pest management solutions claim they optimize service assignments and routes. Usually, they fall short of their promises and deliver little more than Google Maps delivers.</p>
+                    <p>We approach the problem differently. We leveraged tools that power logistics providers like UPS, DHL, and Maersk on a global scale and supercharged them with logic uniquely relevant to pest management.</p>
+                    <p>Solvd gives you access to routing optimizations previously available only to the biggest global players and lets you customize them to include priorities such as account value, service-order profitability, account familiarity, relevant tech skills, and customer preferences.</p>
+                </div>
+            </section>
+            <section class="section section-value-prop-4">
+                <div class="container">
+                    <img src="images/value-prop-4.svg" width="726" height="798" />
+                    <h2>Drill deep for insights</h2>
+                    <p>Most systems are no more than repositories where your data sits idly, failing to create additional value.</p>
+                    <p>Solvd actively listens to your data and interprets it for you, helping you discover valuable insights about your business.</p>
+                    <p>Our tools can also help you act on such insights by automatically adjusting marketing campaigns, suggesting potential upsells, improving scheduling, and much more.</p>
+                </div>
+            </section>
+            <section class="section section-request" id="request">
+                <div class="container">
+                    <h2 class="title">Get Solvd</h2>
+                    <form id="email-form" name="email-form" data-name="Email Form">
+                        <div class="field is-grouped is-grouped-centered">
+                            <div class="control">
+                                <input class="input" id="fname-input" type="text-field" placeholder="First name" maxlength="256" name="FNAME" data-name="firstname">
+                            </div>
+                            <div class="control">
+                                <input class="input" id="lname-input" type="text-field" placeholder="Last Name" maxlength="256" name="LNAME" data-name="lastname">
+                            </div>
+                            <div class="control">
+                                <input class="input" type="email" id="email-input" placeholder="Work email" maxlength="256" name="EMAIL" data-name="Email" id="email" required="">
+                            </div>
+                            <div class="control">
+                                <button class="button" type="submit" data-wait="Please wait..." data-w-id="1d71aa82-7fe9-78f6-4773-170667723b2d">Request a demo</button>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <h5 id="drop-email"></h5>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <a href="#">
+                                <img class="logo" src="./images/solvd-logo.svg" alt="Solvd">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <!-- <div class="level-item">
+                            <a href="legal.html">Terms of Service</a>
+                        </div>
+                        <div class="level-item">
+                            <a href="legal.html">Privacy</a>
+                        </div> -->
+                        <div class="level-item">
+                            <span class="footer-copyright">&copy 2018 Solvd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#email-form").on("submit", function(e) {
+                    e.preventDefault();
+                    console.log('submitted')
+                    $.ajax({
+                        type: "GET",
+                        dataType: 'json',
+                        contentType: "application/json; charset=utf-8",
+                        url: "https://solvdapp.us18.list-manage.com/subscribe/post-json?u=52251021093ed092c4da00ca7&amp;id=475452dd21&c=?",
+                        data: $(this).serialize(),
+                        error: function() {
+                            console.log("request failed")
+                        },
+                        success: function(data) {
+                            console.log("request succeeded")                        
+                            if (data.result == "success") {
+                                console.log("subscribed")
+                                $("#drop-email").text("Hang tight, we've got something great for you.")
+                                $('#email-input').val("");
+                                $('#fname-input').val("");
+                                $('#lname-input').val("");
                             } else {
-                                $("#drop-email").text("Something went wrong, please email us hello@solvdapp.io")
+                                console.log("failed to subscribe")
+                                msg = data.msg
+                                if (msg.includes("already subscribed") == true) {
+                                    console.log("already subscribed")
+                                    $("#drop-email").text("Looks like you're already subscribed.")
+                                } else if (msg.includes("recent signup requests")) {
+                                    $("#drop-email").text("Too many recent requests, please try again later.")
+                                } else {
+                                    $("#drop-email").text("Something went wrong, please email us hello@solvdapp.io")
+                                }
+                                $("#form-success").css({
+                                    opacity: 1
+                                })
+                                console.log(msg)
                             }
-                            $("#form-success").css({
-                                opacity: 1
-                            })
-                            console.log(msg)
                         }
-                    }
+                    })
                 })
-            })
-        });
-    </script>
-</body>
-
+            });
+        </script>
+    </body>
 </html>
