@@ -175,7 +175,7 @@
                                 msg = data.msg
                                 if (msg.includes("already subscribed") == true) {
                                     console.log("already subscribed")
-                                    $("#drop-email").text("It looks like you're already subscribed.")
+                                    $("#drop-email").text("It looks like you already subscribed.")
                                 } else if (msg.includes("recent signup requests")) {
                                     $("#drop-email").text("Too many recent requests, please try again later.")
                                 } else {
