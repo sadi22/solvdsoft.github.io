@@ -72,7 +72,7 @@
                 <div class="container">
                     <img src="images/value-prop-3.png" width="805" height="967" />
                     <h2>Scheduling wizardry</h2>
-                    <p>Some pest management solutions claim to optimize service assignments and routes. Usually, they fail to deliver anything more than basic Google Maps functionality.</p>
+                    <p>Some pest management solutions claim to optimize service assignments and routes. Usually, they fail to deliver anything more than parts of Google Maps.</p>
                     <p>We approach the problem differently. We leverage tools that power global logistics providers such as UPS, DHL, and Maersk, and we supercharge them with pest management logic.</p>
                     <p>Solvd provides your business an assignment and routing solution that, until now, has been unavailable to anyone other than the biggest players ... and Solvd enables you to prioritize variables such as account value, service-order profitability, account familiarity, tech skills, and customer preferences.</p>
                 </div>
@@ -160,7 +160,7 @@
                             console.log("request succeeded")                        
                             if (data.result == "success") {
                                 console.log("subscribed")
-                                $("#drop-email").text("Hang tight, we've got something great for you.")
+                                $("#drop-email").text("Hang tight. We have something great for you.")
                                 $('#email-input').val("");
                                 $('#fname-input').val("");
                                 $('#lname-input').val("");
@@ -169,7 +169,7 @@
                                 msg = data.msg
                                 if (msg.includes("already subscribed") == true) {
                                     console.log("already subscribed")
-                                    $("#drop-email").text("Looks like you're already subscribed.")
+                                    $("#drop-email").text("It looks like you're already subscribed.")
                                 } else if (msg.includes("recent signup requests")) {
                                     $("#drop-email").text("Too many recent requests, please try again later.")
                                 } else {
