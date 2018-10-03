@@ -162,6 +162,11 @@
                             console.log("request succeeded")                        
                             if (data.result == "success") {
                                 console.log("subscribed")
+                                ga('send', 'event', {
+                                    eventCategory: 'subscription',
+                                    eventAction: 'subscribe',
+                                    eventLabel: $('#fname-input').val("") + $('#lname-input').val("");
+                                  });
                                 $("#drop-email").text("Hang tight. We have something great for you.")
                                 $('#email-input').val("");
                                 $('#fname-input').val("");
