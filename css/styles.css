@@ -117,6 +117,7 @@ nav.level {
   background-position: center 250px, center -9px;
   background-repeat: no-repeat;
   background-size: 738px 363px, 1440px 1501px;
+  overflow: hidden;
 }
 
 .section {
@@ -551,6 +552,7 @@ nav.level {
 .footer {
   position: relative;
   background-color: #fff;
+  padding: 3rem 1.5rem;
 }
 
 .footer a {
