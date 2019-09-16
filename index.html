@@ -8,6 +8,7 @@
         <meta name="description" content="Solvd is remarkable pest management software that will solve your customers’ problems, delight your techs, and transform your business.">
         <meta name="author" content="Solvd">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/styles.css?v=1.0">
         <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -27,7 +28,7 @@
                         </div>
                         <div class="level-right">
                             <div class="level-item">
-                                <a class="button" href="#request">Request a demo</a>
+                                <a href="" class="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solvd-app/demo?text_color=464b50&primary_color=1f82ff'});return false;">See demo now</a> 
                             </div>
                         </div>
                     </nav>
@@ -41,7 +42,8 @@
                         <h1 class="title">Turn working into solving</h1>
                         <p>Solvd is remarkable pest management software that solves customers’ problems, delights users, and transforms businesses.</p>
                         <div class="hero-cta">
-                            <a class="button" href="#request">Request a demo</a>
+                              <a href="" class="button large-text" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solvd-app/pestworld-demo?text_color=464b50&primary_color=1f82ff'});return false;">I would like to schedule a demo at PestWorld</a>
+                            <a href="" class="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solvd-app/demo?text_color=464b50&primary_color=1f82ff'});return false;">I would like to see it now</a>
                         </div>
                     </div>
                 </div>
@@ -52,40 +54,56 @@
                     <p class="section-intro-question">How?</p>
                 </div>
             </section>
-            <section class="section section-value-prop-1">
-                <div class="container">
-                    <img src="images/value-prop-1.png" width="854" height="985" />
-                    <h2>Seamless user experiences</h2>
-                    <p>We burned the midnight oil to figure-out Solvd's user interface, so your employees and colleagues don’t have to.</p>
-                    <p>Solvd offers frictionless usability and a user interface that adapts to communicate the most meaning from its data. In every instance, Solvd hides unnecessary clutter to surface key information for solving problems and facilitating customer interactions.</p>
+            <section class="vp-1">
+                <div class= "row" >
+                    <div class="image-left">
+                        <img src="images/Value_Prop_1-new.png" width="750" height="798" />
+                    </div>
+                    <div class= "content-right">
+                        <h2>Seamless user experiences</h2>
+                        <p>We burned the midnight oil to figure-out Solvd's user interface, so your employees and colleagues don’t have to.</p>
+                        <p>Solvd offers frictionless usability and a user interface that adapts to communicate the most meaning from its data. In every instance, Solvd hides unnecessary clutter to surface key information for solving problems and facilitating customer interactions.</p>
+                    </div>
                 </div>
-            </section>
-            <section class="section section-value-prop-2">
-                <div class="container">
-                    <img src="images/value-prop-2.png" width="948" height="1000" />
-                    <h2>Revolutionary service orders</h2>
-                    <p>Service orders shouldn’t be stagnant, unactionable paragraphs.</p>
-                    <p>In Solvd, service orders are intelligent workspaces that adjust in real-time to handle ever-changing pest problems and technicians’ varying levels of skill... so even novice techs seem like experts in customers’ eyes.</p>
-                    <p>Solvd service orders direct and standardize technicians' work and arm techs with the information they need, whenever they need it, to deliver the best outcomes and capitalize on opportunities to satisfy and upsell customers.</p>
+            </section> 
+            <section class="vp-2">
+                <div class= "row mob-reverse" >
+                    <div class= "content-left">
+                        <h2>Revolutionary service orders</h2>
+                        <p>Service orders shouldn’t be stagnant, unactionable paragraphs.</p>
+                        <p>In Solvd, service orders are intelligent workspaces that adjust in real-time to handle ever-changing pest problems and technicians’ varying levels of skill... so even novice techs seem like experts in customers’ eyes.</p>
+                        <p>Solvd service orders direct and standardize technicians' work and arm techs with the information they need, whenever they need it, to deliver the best outcomes and capitalize on opportunities to satisfy and upsell customers.</p>
+                    </div>
+                    <div class="image-right">
+                        <img src="images/Value_Prop_2-new.png" width="750" height="798" />
+                    </div>
                 </div>
-            </section>
-            <section class="section section-value-prop-3">
-                <div class="container">
-                    <img src="images/value-prop-3.png" width="805" height="967" />
-                    <h2>Scheduling wizardry</h2>
-                    <p>Other vendors promise that their pest management software optimizes service assignments and technician routes, but none have delivered.</p>
-                    <p>Solvd approaches the problem differently. We leverage tools that power global businesses such as UPS, DHL, and Maersk and supercharge those tools with pest management logic.</p>
-                    <p>Solvd delivers assignment and routing solutions that, until now, haven't been available to companies other than the biggest logistics companies. At the same time, Solvd enables even the smallest companies to prioritize routing variables such as account value, service-order profitability, account familiarity, tech skills, and customer preferences.</p>
+            </section> 
+            <section class="vp-3">
+                <div class= "row" >
+                    <div class="image-left">
+                        <img src="images/Value_Prop_3-new.png" width="750" height="798" />
+                    </div>
+                    <div class= "content-right">
+                        <h2>Scheduling wizardry</h2>
+                        <p>Other vendors promise that their pest management software optimizes service assignments and technician routes, but none have delivered.</p>
+                        <p>Solvd approaches the problem differently. We leverage tools that power global businesses such as UPS, DHL, and Maersk and supercharge those tools with pest management logic.</p>
+                        <p>Solvd delivers assignment and routing solutions that, until now, haven't been available to companies other than the biggest logistics companies. At the same time, Solvd enables even the smallest companies to prioritize routing variables such as account value, service-order profitability, account familiarity, tech skills, and customer preferences.</p>
+                    </div>
                 </div>
-            </section>
-            <section class="section section-value-prop-4">
-                <div class="container">
-                    <img src="images/value-prop-4.svg" width="726" height="798" />
-                    <h2>Insightful data mining</h2>
-                    <p>Most pest management systems are mere repositories where data sit idly and fail to create value.</p>
-                    <p>Solvd listens for changes in data, derives insights from them, and acts on those insights to change user-behavior, adjust marketing campaigns, optimize schedules, and orchestrate service execution.</p>
+            </section> 
+            <section class="vp-4">
+                <div class= "row mob-reverse" >
+                    <div class= "content-left">
+                        <h2>Insightful data mining</h2>
+                        <p>Most pest management systems are mere repositories where data sit idly and fail to create value.</p>
+                        <p>Solvd listens for changes in data, derives insights from them, and acts on those insights to change user-behavior, adjust marketing campaigns, optimize schedules, and orchestrate service execution.</p>
+                    </div>
+                    <div class="image-right">
+                        <img src="images/Value_Prop_4-new.png" width="750" height="798" />
+                    </div>
                 </div>
-            </section>
+            </section>   
             <section class="section section-request" id="request">
                 <div class="container">
                     <h2 class="title">Get Solvd</h2>
@@ -143,6 +161,7 @@
           gtag('config', 'UA-126877537-1');
         </script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#email-form").on("submit", function(e) {
